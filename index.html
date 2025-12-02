@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Maija Stenroos</title>
+
+    <meta name="keywords" content="Wealth Management, IT Development, Maija Stenroos">
+    <meta name="description" content="Maija Stenroos - Wealth Development and IT Professional">
+    <meta name="author" content="Maija Stenroos">
+
+</head>
+<body>
+
+    <!-- Videotausta otsikolle -->
+    <div id="video-header">
+        <video autoplay loop muted>
+            <source src="media/Maija1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1>MAIJA STENROOS</h1>
+            <p class="subtitle">Wealth Development & IT</p>
+        </div>
+    </div>
+
+    <!-- Navigaatio -->
+    <div class="nav">
+        <a href="#aboutme"><span>About me</span></a>
+        <a href="#cv"><span>CV</span></a>
+        <a href="#hommiin"><span>Contact</span></a>
+    </div>
+
+    <!-- Esittely -->
+    <section id="aboutme">
+        <h2>About me</h2>
+        <p>
+            <strong class="highlight">Over the past 15 years</strong>, I have cultivated extensive expertise in the financial sector, focusing on wealth management.<br><br>
+
+            <strong class="highlight">My career began</strong> as a cashier progressing into a Private Banker in the prestigious Private Banking unit of Finland's largest bank.
+            This journey has equipped me with a deep understanding of client needs and the day-to-day realities of professionals working in the wealth management sector.<br><br>
+
+            <strong class="highlight">Five years ago</strong>, I transitioned into wealth management development, focusing primarily on wealth management systems and extensive integration and migration projects. As I am further strengthening my technical expertise by studying for a Bachelor of Engineering in Information Technology, I am uniquely positioned to bridge the gap between finance and technology.<br><br>
+
+            <strong class="highlightTwo">This combination of financial acumen and technical expertise enables me to deliver solutions that align with business needs while being built on a foundation of technical sustainability.</strong>
+        </p>
+    </section>
+
+    <!-- Työkokemus -->
+    <section id="cv">
+        <div class="timeline">
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>Product Owner</h2>
+                    <small>2021 - Present</small>
+                    <p>I am responsible for the systems within my domain, related processes, and ensuring they align with long-term business needs. I have led large-scale migration and integration projects, defined new system features for IT, tested implementations, and trained users in updated processes. My role focuses on balancing technical functionality with strategic business objectives.</p>
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>Business Development Manager</h2>
+                    <small>2020 - 2021</small>
+                    <p>I transitioned to full-time wealth management development, serving as a project manager for system development initiatives. I established processes and prioritization methods for wealth management development. Before assuming the role of Product Owner, I contributed to the preparation of a significant corporate acquisition, focusing on IT dependencies and integration planning.</p>
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>Private Banker</h2>
+                    <small>2018 - 2020</small>
+                    <p>I managed significant client portfolios at OP Helsinki and OP Tampere, overseeing their wealth and comprehensive financial needs. I provided tailored solutions to support clients' financial growth. My role emphasized personalized wealth management and fostering long-term client trust and satisfaction.</p>
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>Investment Specialist, Corporate Banking</h2>
+                    <small>2016 - 2018</small>
+                    <p>I was responsible for wealth management for OP Etelä Häme's corporate banking clients in collaboration with the Private Wealth Manager. I developed and implemented tailored wealth management concepts for corporate banking, delivering successful solutions for both clients and the bank. Additionally, I conducted sales process training across other branches, enhancing the overall expertise and effectiveness of the team.</p>
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>Back Office Specialist</h2>
+                    <small>2014 - 2016</small>
+                    <p>Managing private client portfolios, handled detailed reporting, and executed model portfolio adjustments. I ensured smooth operational processes for high-net-worth clients while adhering to regulatory standards. My role required precision, attention to detail, and effective collaboration to enhance the efficiency of private banking services.</p>
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>Service Advisor</h2>
+                    <small>2010 - 2014</small>
+                    <p>As a Service advisor I was responsible for daily banking service advisory, investment consulting, and  management of client relationships in personal banking. Gained valuable expertise in local branch operations, customer service, and sales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yhteystiedot -->
+    <section id="hommiin">
+        <div class="contact-container">
+            <!-- Kuva ja tiedot -->
+            <div class="contact-info">
+                <img src="media/kuva3.jpg" alt="Maijan kuva">
+                <p><i class="fas fa-phone"></i> 050 531 6780</p>
+                <p><i class="fas fa-envelope"></i> AG3873@student.jamk.fi</p>
+            </div>
+    
+            <!-- Yhteydenottolomake -->
+            <form class="contact-form">
+                <h2>Contact me</h2>
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your e-mail" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript aikajanalle -->
+    <script>
+        document.addEventListener("scroll", function () {
+            const containers = document.querySelectorAll(".container");
+            const triggerHeight = window.innerHeight * 0.8;
+
+            containers.forEach((container) => {
+                const containerTop = container.getBoundingClientRect().top;
+                if (containerTop < triggerHeight) {
+                    container.classList.add("show");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
